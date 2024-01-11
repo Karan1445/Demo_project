@@ -1,0 +1,229 @@
+body{
+    background-color:rgba(255, 255, 255, 0.219);
+    overflow: hidden;
+    animation: body 3.8s forwards 1 ;
+}
+.nav_header{
+    text-align: center;
+    font-size: large;
+    position: sticky;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+}
+a{
+    padding-left: 30px;
+    height: 10px;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: rgba(228, 0, 249, 0.974);
+}
+.circle_1{
+    height: 550px;
+    width: 550px;
+    background:linear-gradient(rgba(50, 24, 167, 0.542),rgb(177, 3, 235));
+    border-radius: 50%;
+    z-index: -1;
+    position:absolute;
+    left: -190px;
+    animation: Circle 5s ease-in  infinite alternate-reverse;
+}
+.main_txt{
+    color: rgba(32, 4, 35, 0.974);
+    position: relative;
+    left: 290px;
+    top:390px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.main_txt h1{
+    font-size:50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: text 5s ease-in-out  infinite none alternate-reverse;
+}
+.main_txt h3{
+    animation: text 5s ease-in-out  infinite none alternate-reverse;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.Circle_2{
+    height: 350px;
+    width: 350px;
+    background:linear-gradient(120deg,rgba(20, 171, 123, 0.542),rgba(6, 46, 179, 0.436));  
+    z-index: -1;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    animation: Circle2 5s ease-in  infinite alternate-reverse;
+}
+.Circle_3{
+    height: 200px;
+    width: 200px;
+    background:linear-gradient(120deg,rgba(171, 148, 20, 0.407),rgba(179, 6, 173, 0.44));  
+    z-index: -1;
+    border-radius: 50%;
+    position: absolute;
+    left:800px;
+    top: -80px;
+    animation: Circle3 5s ease-in  infinite alternate-reverse;
+}
+.footer{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    left: 50%;
+    color: cornflowerblue;
+}
+.circle_4{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    top:500px;
+    left: 360px;
+    z-index: -1;
+    border-radius: 50%;
+    background: linear-gradient(220deg,rgba(222, 168, 4, 0.407),rgba(179, 6, 173, 0.73));
+    animation: Circle_4 5s ease-in  infinite  alternate-reverse;
+}
+.img_1 img{
+    border-radius: 50%;
+    position: absolute;
+    right: 250px;
+    top:150px;
+    animation: img_1 3s ease  infinite  alternate-reverse;
+}
+.img_2 img{
+    border-radius: 50%;
+    position: absolute;
+    left: 356px;
+    top:100px;
+    animation: img_2 3s ease  infinite  alternate-reverse;
+}
+.img_3 img{
+    border-radius: 5px;
+    position: absolute;
+    left: 656px;
+    top:300px;
+    animation: img_3 3s ease  infinite  alternate-reverse;
+}
+.img_4 img{
+    position: absolute;
+    right:100px;
+    bottom: 40px;
+}
+/* @keyframes img_3 {
+    0%{
+        left:656px;
+    }
+    100%{
+        left:659px;
+    }
+}
+@keyframes img_2 {
+    0%{
+        left:360px;
+    }
+    100%{
+        left:356px;
+    }
+}
+@keyframes img_1 {
+    0%{
+        right:258px;
+    }
+    100%{
+        right:250px;
+    }
+} */
+@keyframes Circle_4 {
+    0%{
+        left:300px;
+        height: 350px;
+        width: 350px;
+       
+    }
+    100%{
+        left:360px;
+    }
+}
+@keyframes Circle {
+    0%{
+        left:-170px;
+        height: 450px;
+        width: 450px;
+       
+    }
+    100%{
+        left:-190px
+    }
+}
+@keyframes Circle3 {
+    0%{
+        left:800px;
+        height:150px;
+        width: 150px;
+       
+    }
+    100%{
+        top:-40px;
+    }
+}
+@keyframes Circle2 {
+    0%{
+        right:-170px;
+        height: 300px;
+        width: 300px;
+       
+    }
+    100%{
+        right:-190px;
+    }
+}
+@keyframes text{ 
+    0%{
+       color: blueviolet;
+    }
+    100%{
+        color:rgba(137, 43, 226, 0.452);
+    }
+    
+}
+@keyframes body {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.main_txt h1{
+    color: rgb(68, 0, 132);
+    text-align: start;
+}
+.main_txt h3{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid blueviolet; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret  .75s step-end infinite ;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: blueviolet; }
+  }
